@@ -2,7 +2,7 @@ const a = "camel-case-string";
 const b = "snakeCaseString";
 
 console.log(a);
-console.log("VVVV");
+console.log("converted into...");
 
 function convertCamelCase (frase){
   const x = frase.split("-");
