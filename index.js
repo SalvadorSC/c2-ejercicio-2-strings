@@ -1,6 +1,8 @@
 const a = "camel-case-string";
 const b = "snakeCaseString";
 
+console.log(a)
+console.log(b)
 function convertCamelCase (frase){
   const x = frase.split("-")
   for (const i in x){
@@ -10,7 +12,7 @@ function convertCamelCase (frase){
   }
   x[0] = x[0].replace(x[0][0],x[0][0].toLowerCase())
 
-  /* console.log(x.join("")) */
+  console.log(x.join(""))
 }
 
 convertCamelCase(a)
