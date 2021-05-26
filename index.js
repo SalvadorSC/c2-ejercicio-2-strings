@@ -19,7 +19,7 @@ function convertCamelCase (frase){
 convertCamelCase(a);
 
 console.log(b);
-console.log("VVVV");
+console.log("converted into...");
 
 function convertsnakeCase (palabra){
   const arr = [];
