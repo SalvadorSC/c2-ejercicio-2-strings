@@ -1,7 +1,7 @@
-const a = "camel-case-string";
-const b = "snakeCaseString";
+const fraseEnSnakeCase = "camel_case_string";
+const fraseEnCamelCase = "snakeCaseString";
 
-console.log(a);
+console.log(fraseEnSnakeCase);
 console.log("converted into...");
 
 function convertCamelCase (frase){
@@ -16,16 +16,16 @@ function convertCamelCase (frase){
   console.log(fraseSeparada.join(""));
 }
 
-convertCamelCase(a);
+convertCamelCase(fraseEnSnakeCase);
 
-console.log(b);
+console.log(fraseEnCamelCase);
 console.log("converted into...");
 
 function convertSnakeCase (palabra){
   const arr = [];
   for (const i in palabra){
     if(palabra[i] === palabra[i].toUpperCase()){
-     arr.push(`-${palabra[i].toLowerCase()}`);
+     arr.push(`_${palabra[i].toLowerCase()}`);
     }else{
       arr.push(palabra[i]);
     }
@@ -34,4 +34,4 @@ function convertSnakeCase (palabra){
 }
 
 
-convertsnakeCase(b);
+convertSnakeCase(fraseEnCamelCase);
