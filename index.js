@@ -21,7 +21,7 @@ convertCamelCase(a);
 console.log(b);
 console.log("converted into...");
 
-function convertsnakeCase (palabra){
+function convertSnakeCase (palabra){
   const arr = [];
   for (const i in palabra){
     if(palabra[i] === palabra[i].toUpperCase()){
