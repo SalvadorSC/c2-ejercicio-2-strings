@@ -5,15 +5,15 @@ console.log(a);
 console.log("converted into...");
 
 function convertCamelCase (frase){
-  const x = frase.split("-");
-  for (const i in x){
-    const primeraLetra = x[i][0].toUpperCase();
+  const fraseSeparada = frase.split("_");
+  for (const i in fraseSeparada){
+    const primeraLetra = fraseSeparada[i][0].toUpperCase();
 
-    x[i] = x[i].replace(x[i][0],primeraLetra);
+    fraseSeparada[i] = fraseSeparada[i].replace(fraseSeparada[i][0],primeraLetra);
   }
-  x[0] = x[0].replace(x[0][0],x[0][0].toLowerCase())
+  fraseSeparada[0] = fraseSeparada[0].replace(fraseSeparada[0][0],fraseSeparada[0][0].toLowerCase())
 
-  console.log(x.join(""));
+  console.log(fraseSeparada.join(""));
 }
 
 convertCamelCase(a);
@@ -32,5 +32,6 @@ function convertsnakeCase (palabra){
   }
   console.log(arr.join(""));
 }
+
 
 convertsnakeCase(b);
